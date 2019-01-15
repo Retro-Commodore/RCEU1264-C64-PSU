@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -59,80 +59,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="traffo">
-<packages>
-<package name="TEZ10/D230/9V">
-<pad name="P6" x="0" y="5" drill="1" shape="long"/>
-<pad name="N/C@5" x="0" y="10" drill="1" shape="long"/>
-<pad name="N/C@2" x="0" y="25" drill="1" shape="long"/>
-<pad name="P1" x="0" y="30" drill="1" shape="long"/>
-<pad name="N/C@12" x="27.5" y="30" drill="1" shape="long"/>
-<pad name="S11" x="27.5" y="25" drill="1" shape="long"/>
-<pad name="N/C@10" x="27.5" y="20" drill="1" shape="long"/>
-<pad name="N/C@9" x="27.5" y="15" drill="1" shape="long"/>
-<pad name="S8" x="27.5" y="10" drill="1" shape="long"/>
-<pad name="N/C@7" x="27.5" y="5" drill="1" shape="long"/>
-<wire x1="-8" y1="-9" x2="36" y2="-9" width="0.5" layer="21"/>
-<wire x1="36" y1="-9" x2="36" y2="43" width="0.5" layer="21"/>
-<wire x1="36" y1="43" x2="-8" y2="43" width="0.5" layer="21"/>
-<wire x1="-8" y1="43" x2="-8" y2="-9" width="0.5" layer="21"/>
-<text x="-4" y="32" size="1.778" layer="21">1</text>
-<text x="1.27" y="-12.7" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="45.72" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="TEZTRAFFO">
-<description>BREVE.pl TEZ10/D230/9V transformator</description>
-<pin name="P1" x="-27.94" y="12.7" visible="pad" length="middle" direction="pwr"/>
-<pin name="P6" x="-27.94" y="-2.54" visible="pad" length="middle" direction="pwr"/>
-<pin name="S11" x="-5.08" y="10.16" visible="pad" length="middle" direction="pwr" rot="R180"/>
-<pin name="S8" x="-5.08" y="0" visible="pad" length="middle" direction="pwr" rot="R180"/>
-<polygon width="0.254" layer="94">
-<vertex x="-22.86" y="12.7"/>
-<vertex x="-22.86" y="-2.54"/>
-<vertex x="-20.32" y="-2.54"/>
-<vertex x="-20.32" y="12.7"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-10.16" y="10.16"/>
-<vertex x="-12.7" y="10.16"/>
-<vertex x="-12.7" y="0"/>
-<vertex x="-10.16" y="0"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-16.764" y="12.7"/>
-<vertex x="-16.764" y="-2.54"/>
-<vertex x="-16.256" y="-2.54"/>
-<vertex x="-16.256" y="12.7"/>
-</polygon>
-<text x="-23.622" y="3.048" size="1.778" layer="94" rot="R90">PRI</text>
-<text x="-9.398" y="7.62" size="1.778" layer="94" rot="R270">SEC</text>
-<text x="-20.32" y="15.24" size="1.778" layer="95">&gt;NAME</text>
-<text x="-20.32" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TEZTRAFFO">
-<gates>
-<gate name="G$1" symbol="TEZTRAFFO" x="17.78" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="TEZ10/D230/9V">
-<connects>
-<connect gate="G$1" pin="P1" pad="P1"/>
-<connect gate="G$1" pin="P6" pad="P6"/>
-<connect gate="G$1" pin="S11" pad="S11"/>
-<connect gate="G$1" pin="S8" pad="S8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="fuse" urn="urn:adsk.eagle:library:233">
 <description>&lt;b&gt;Fuses and Fuse Holders&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -2111,6 +2037,83 @@ drill 1.4 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="trafo">
+<packages>
+<package name="TEZ10/D230/9V">
+<pad name="P6" x="0" y="5" drill="1" shape="long"/>
+<pad name="N/C@5" x="0" y="10" drill="1" shape="long"/>
+<pad name="N/C@2" x="0" y="25" drill="1" shape="long"/>
+<pad name="P1" x="0" y="30" drill="1" shape="long"/>
+<pad name="N/C@12" x="27.5" y="30" drill="1" shape="long"/>
+<pad name="S11" x="27.5" y="25" drill="1" shape="long"/>
+<pad name="N/C@10" x="27.5" y="20" drill="1" shape="long"/>
+<pad name="N/C@9" x="27.5" y="15" drill="1" shape="long"/>
+<pad name="S8" x="27.5" y="10" drill="1" shape="long"/>
+<pad name="N/C@7" x="27.5" y="5" drill="1" shape="long"/>
+<wire x1="-8" y1="-9" x2="36" y2="-9" width="0.5" layer="21"/>
+<wire x1="36" y1="-9" x2="36" y2="43" width="0.5" layer="21"/>
+<wire x1="36" y1="43" x2="-8" y2="43" width="0.5" layer="21"/>
+<wire x1="-8" y1="43" x2="-8" y2="-9" width="0.5" layer="21"/>
+<text x="-4" y="32" size="1.778" layer="21">1</text>
+<text x="1.27" y="-12.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="45.72" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="TEZTRAFO">
+<description>BREVE.pl TEZ10/D230/9V transformator</description>
+<pin name="P1" x="-27.94" y="12.7" visible="pad" length="middle" direction="pwr"/>
+<pin name="P6" x="-27.94" y="-2.54" visible="pad" length="middle" direction="pwr"/>
+<pin name="S11" x="-5.08" y="10.16" visible="pad" length="middle" direction="pwr" rot="R180"/>
+<pin name="S8" x="-5.08" y="0" visible="pad" length="middle" direction="pwr" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-22.86" y="12.7"/>
+<vertex x="-22.86" y="-2.54"/>
+<vertex x="-20.32" y="-2.54"/>
+<vertex x="-20.32" y="12.7"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-10.16" y="10.16"/>
+<vertex x="-12.7" y="10.16"/>
+<vertex x="-12.7" y="0"/>
+<vertex x="-10.16" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-16.764" y="12.7"/>
+<vertex x="-16.764" y="-2.54"/>
+<vertex x="-16.256" y="-2.54"/>
+<vertex x="-16.256" y="12.7"/>
+</polygon>
+<text x="-23.622" y="3.048" size="1.778" layer="94" rot="R90">PRI</text>
+<text x="-9.398" y="7.62" size="1.778" layer="94" rot="R270">SEC</text>
+<text x="-20.32" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-23.876" y1="11.938" x2="-23.622" y2="11.938" width="0.254" layer="94"/>
+<wire x1="-23.622" y1="11.938" x2="-23.876" y2="11.938" width="0.254" layer="94"/>
+<wire x1="-9.144" y1="9.398" x2="-9.398" y2="9.398" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEZTRAFO">
+<gates>
+<gate name="G$1" symbol="TEZTRAFO" x="17.78" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="TEZ10/D230/9V">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P6" pad="P6"/>
+<connect gate="G$1" pin="S11" pad="S11"/>
+<connect gate="G$1" pin="S8" pad="S8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2121,7 +2124,7 @@ drill 1.4 mm</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="traffo" deviceset="TEZTRAFFO" device=""/>
+<part name="U$1" library="trafo" deviceset="TEZTRAFO" device=""/>
 <part name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="FUSE" device="SH22,5" package3d_urn="urn:adsk.eagle:package:14059/1" value="250mA T"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="U$2" library="meanwell_irm_v7" deviceset="IRM_15/20" device="IRM_15/20"/>
