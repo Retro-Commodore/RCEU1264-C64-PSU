@@ -9,4 +9,4 @@ A few parts like the DIN connector can be aqcuired from ebay where they're much 
 
 If you are a reseller, and use my designs, though the projects are open source, I'd like to ask you to donate a small amount of money, to cancer research for each sold device.
 
-The Mean Well IRM-20-5 is Short circuit / Overload / Over voltage protected (pdf's is in the documentation folder).
+The Mean Well IRM-20-5 is Short circuit / Overload / Over voltage protected (pdf's from Mean Well are in the documentation folder).
