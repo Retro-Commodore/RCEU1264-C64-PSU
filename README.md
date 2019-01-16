@@ -18,6 +18,9 @@ If you want to add an on/off switch, the easiest might be a switch on the 230v c
 
 The gerber files which is the zip file found in [hardware/eagle](https://github.com/Retro-Commodore/C64-PSU/tree/master/Hardware/Eagle Gerber) can be uploaded as is to PCB manufacturing companies like [JLCPCB](http://jlcpcb.com).
 
+The PCB is created with Eagle which has a limiting size of 100x100mm (or is it 100x80mm?). And the PCB is within this size.
+The newest version of KiCAD should be able to import the eagle files, in case you prefer this. 
+
 **TODO**
 * Add possibility to use PTC (one has to be sourced first), if you read this and know of one already please don't hesitate to add a ticket with the info. You'll providing the community a service :-)
 * Add LED. 
