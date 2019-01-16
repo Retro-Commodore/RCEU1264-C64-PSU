@@ -10,3 +10,9 @@ A few parts like the DIN connector can be aqcuired from ebay where they're much 
 If you are a reseller, and use my designs, though the projects are open source, I'd like to ask you to donate a small amount of money, to cancer research for each sold device.
 
 The Mean Well IRM-20-5 is Short circuit / Overload / Over voltage protected (pdf's from Mean Well are in the documentation folder).
+
+**The trafo is a 230v trafo, so countries that use 115v will need a different trafo**
+
+If you want to add an on/off switch, the easiest might be a switch on the 230v cable, or a round one, the round one is easiest to make holes to -by drilling-.
+
+![PSU](https://github.com/Retro-Commodore/C64-PSU/blob/master/Pictures/Closed%20PSU.jpg)
