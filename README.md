@@ -14,12 +14,12 @@ The Mean Well IRM-20-5 is Short circuit / Overload / Over voltage protected (pdf
 
 **The trafo is a 230v trafo, so countries that use 115v will need a different trafo.**
 
-If you want to add an on/off switch, the easiest might be a switch on the 230v cable, or a round one, the round one is easiest to make holes to -by drilling-.
+If you want to add an on/off switch, the easiest might be a switch on the 230v cable, or a round one, the round one is easiest to make holes to -by drilling-, rather than cutting a square one. But that is entirely up to you :-) .
 
 
 **TODO**
-* Add possibility to use PTC 
-* Add LED.
+* Add possibility to use PTC (one has to be sourced first), if you read this and know of one already please don't hesitate to add a ticket with the info. You'll providing the community a service :-)
+* Add LED. 
 
 
 
