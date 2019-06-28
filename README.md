@@ -1,5 +1,5 @@
 # C64-PSU
-A C64/C128/Vic20 PSU
+A C64/C128/Vic20/Plus4 PSU
 This is a full replacement PSU with modern electronics that won't kill your computer when it gets bad.. the original PSU's short input to output, when they break, feeding approx 10v.
 While it is possible to use wall warts, this design is created to be easy to diy, somewhat pretty and closer to the old designs with off the shelf items.
 
