@@ -3,6 +3,8 @@ A C64/C128/Vic20 PSU
 This is a full replacement PSU with modern electronics that won't kill your computer when it gets bad.. the original PSU's short input to output, when they break, feeding approx 10v.
 While it is possible to use wall warts, this design is created to be easy to diy, somewhat pretty and closer to the old designs with off the shelf items.
 
+Greetz to Trap/Bonzai for being the source of inspiration to create this.
+
 The PSU can be used for the C64 even with i.e. 1541 Ultimate and Vic20, and it's powerful enough to feed the C128 and/or 17xx REU.
 
 All parts can be bought at [tme.eu](https://www.tme.eu/), and the pcb has been designed with parts from there.
@@ -23,7 +25,7 @@ The newest version of KiCAD should be able to import the eagle files, in case yo
 
 **TODO**
 * Add possibility to use PTC (one has to be sourced first), if you read this and know of one already please don't hesitate to add a ticket with the info. You'll providing the community a service :-)
-* Add LED. 
+
 
 
 
